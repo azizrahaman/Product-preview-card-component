@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(30, 38%, 92%)
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    #container {
+      
+      width: 450px;
+      background-color: white;
+      margin: 100px auto 0 auto;
+      display: grid;
+      grid-template-columns: 50% auto;
+      /* display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap; */
+      border-radius: 10px;
+    }
+    .image {
+      
+    }
+    .prductimg {
+      height: 100%;
+      width: 100%;
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 15px;
+    }
+    .right {
+      float: right;
+      padding: 10px;
+    }
+    .price {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-bottom: 15px;
+    }
+    .current-price {
+      font-size: 28px;
+      font-weight: bold;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .prev-price {
+      margin-left: 15px;
+      font-size: 12px;
+    }
+    .addtocart {
+      padding: 10px;
+      width: 100%;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 600;
+      background-color: #3d8168;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .addtocart:hover {
+      background-color: #2B5546;
+    } 
+    .addtocart:active {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container">
+    <div class="image">
+      <img src="images/image-product-desktop.jpg" alt="product" class="prductimg">
+    </div>
+    <div class="right">
+      <h3 style="font-family: monospace">PERFUME</h3>
+      <h1>
+        Gabrielle
+        Essence Eau
+        De Parfun
+      </h1>
+      <p>
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL. 
+      </p>
+      <div class="price">
+        <div class="current-price">$149.99</div>
+        <div class="prev-price"><s>$169.99</s></div>
+      </div>
+      <button class="addtocart">Add to Cart</button>
+    </div>
+  </div>
+
+</body>
+</html>
